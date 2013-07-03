@@ -10,3 +10,5 @@ install:
   - "pip install nose six pylint pyforge --use-mirrors"
 # command to run tests, e.g. python setup.py test
 script: python travis_build.py
+after_success: 
+  - coveralls

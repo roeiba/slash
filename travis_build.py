@@ -14,4 +14,4 @@ if __name__ == '__main__':
     if platform.python_version() < "3.3":
         _execute("pylint --rcfile=.pylintrc setup.py")
         _execute("pylint --rcfile=.pylintrc slash")
-    _execute("nosetests -w tests")
+    _execute("nosetests -w tests --with-coverage --cover-package=slash")
